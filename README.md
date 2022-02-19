@@ -2,7 +2,7 @@
 An ASP.NET Core Web Application for tracking personal fitness progress and goals.
 
 ## Contents
-1. [Features](#Features)
+1. [Features](#Featuress)
 2. [Getting Started](#Getting-Started)
 3. [License](#License)
 4. [Acknowledgements](#Acknowledgements)
