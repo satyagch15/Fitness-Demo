@@ -53,6 +53,8 @@ namespace FitnessTracker.Data
         public async Task<BodyweightTarget> GetBodyweightTarget(FitnessUser User)
         {
             BodyweightTarget result = await dbContext.BodyweightTargets.FirstOrDefaultAsync(target => target.User == User);
+            if (result == null)
+                return new BodyweightTarget();
             return result;
         }
 

@@ -27,11 +27,11 @@ namespace FitnessTracker.ViewModels
 
         public BodyweightSummaryViewModel(IEnumerable<BodyweightRecord> AllRecords,BodyweightTarget Target)
         {
+            this.Target = Target;
             if (AllRecords == null || AllRecords.Count() == 0)
                 return;
 
             this.AllRecords = AllRecords;
-            this.Target = Target;
             this.MostRecentRecord = AllRecords.First();
 
             CurrentMonthRecords = AllRecords.Where(record => record.Date >= DateTime.Today.AddDays(-28));
